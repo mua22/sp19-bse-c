@@ -1,0 +1,21 @@
+#big {
+  min-height: 70px;
+  background-color: yellow;
+  border: 2px solid red;
+  border-radius: 3px;
+}
+#small {
+  min-height: 50px;
+  background-color: yellow;
+  border: 2px dashed red;
+  border-radius: 3px;
+}
+ul {
+  background-color: red;
+}
+ul li {
+  background-color: aqua;
+}
+ul li a {
+  color: green;
+}

@@ -1,0 +1,27 @@
+@btnBg: yellow;
+@basesize: 50px;
+#big {
+  min-height: @basesize + 20;
+  background-color: @btnBg;
+  .mybtn(solid);
+}
+#small {
+  min-height: @basesize;
+  background-color: @btnBg;
+  .mybtn;
+}
+
+.mybtn(@style:dashed) {
+  border: 2px @style red;
+  border-radius: 3px;
+}
+
+ul {
+  background-color: red;
+  li {
+    background-color: aqua;
+    a {
+      color: green;
+    }
+  }
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .child {
+        border: 1px dotted blue;
+        padding: 5px;
+        margin: 5px;
+        background-color: cornflowerblue;
+      }
+      #parent {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+        background-color: yellow;
+      }
+      .height1 {
+        height: 50px;
+      }
+      .height2 {
+        height: 70px;
+      }
+      body {
+        background-color: rgb(25, 139, 139);
+      }
+      @media screen and (max-width: 800px) {
+        body {
+          background-color: rgb(83, 23, 63);
+        }
+      }
+      @media screen and (max-width: 600px) {
+        body {
+          background-color: rgb(25, 139, 139);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="parent">
+      <div class="child height1">1</div>
+    </div>
+  </body>
+</html>
