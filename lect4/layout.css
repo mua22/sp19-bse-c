@@ -1,0 +1,72 @@
+.product {
+  background-color: gray;
+  margin: 5px;
+  padding: 5px;
+  text-align: justify;
+}
+
+#avatar {
+  width: 100px;
+  float: left;
+  margin: 5px;
+  background-color: yellow;
+  padding: 5px;
+  border: 2px dashed blue;
+}
+#first {
+  overflow: hidden;
+}
+#second {
+  clear: both;
+  position: relative;
+  background-color: yellow;
+}
+#secondImg {
+  width: 100px;
+  position: absolute;
+  top: 40px;
+  left: 40px;
+}
+#announcement {
+  position: fixed;
+  background-color: blue;
+  color: white;
+  /* top: 0px; */
+  bottom: 0px;
+  right: 0px;
+  padding: 5px;
+  margin: 5px;
+}
+
+#menu > li {
+  display: inline;
+}
+
+#menu-container {
+  background-color: orange;
+  padding: 2px;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 5;
+}
+
+#menu li a {
+  color: black;
+}
+.dropdown {
+  list-style-type: none;
+  background-color: lightgrey;
+  position: absolute;
+  display: none;
+}
+.has-dropdown {
+  position: relative;
+}
+.dropdown li {
+  width: 200px;
+}
+
+.has-dropdown:hover .dropdown {
+  display: block;
+}
