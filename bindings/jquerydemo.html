@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(function () {
+        $("#myBtn").click(appendLi);
+        // $("#myUl li").click(function () {
+        //   alert("Li CLicked");
+        // });
+        $("body").on("click", "#myUl li", function () {
+          alert("Li CLicked");
+        });
+      });
+
+      function appendLi() {
+        $("#myUl").append("<li> New Li</li>");
+      }
+    </script>
+  </head>
+  <body>
+    <button id="myBtn">Click Me</button>
+    <ul id="myUl">
+      <li>Some Text</li>
+      <li>Some Text</li>
+      <li>Some Text</li>
+    </ul>
+  </body>
+</html>
